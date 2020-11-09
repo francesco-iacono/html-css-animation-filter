@@ -128,7 +128,10 @@
     transform: scale(1.5);
 }
 .ex-10-icon {
-    animation: spin 1s linear infinite;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 @keyframes spin {
     0% {
@@ -136,14 +139,14 @@
     }
 }
 .ex-11-icon:hover {
-    animation: spinALittleBit 3s;
+    animation: spin11 3s;
 }
-@keyframes spinALittleBit {
+@keyframes spin11 {
     0% {
         transform: rotate(0);
     }
-    90% {
-        transform: rotate(315deg);
+    80% {
+        transform: rotate(300deg);
     }
     100% {
         transform: rotate(0);
